@@ -17,7 +17,7 @@ weatherForm.addEventListener('submit', e => {
     .then(response => response.json())
     .then(data => {
       if (!data.error) {
-        p1.innerHTML = '<b>Current temperature:  </b>' + data.temperature + 'C'
+        p1.innerHTML = '<b>Current temperature:  </b>' + data.temperature + ' C'
         p2.innerHTML = data.forecast
         p3.textContent = data.location
         p4.innerHTML = ''
